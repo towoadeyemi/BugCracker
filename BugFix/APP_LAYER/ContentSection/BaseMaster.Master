@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BaseMaster.master.cs" Inherits="BugFix.APP_LAYER.ContentSection.BaseMaster" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style=" width:100%;margin:0;padding:0;border:0;">
+    <form id="form1" runat="server">
+
+        <div style="width:100%;">
+            <div style="width:100%;height:200px;background-color:brown; text-align:center;">
+
+               <h1> Bug Fix </h1>
+            </div>
+            
+            <div style="width:100%; text-align:center; font-size:xx-large;">
+                <asp:Label ID="lbl_HeaderText" runat="server" Text="Welcome to BugFix"></asp:Label>
+
+            </div>
+
+        </div>
+
+
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
